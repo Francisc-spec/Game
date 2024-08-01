@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo do texto */
+    display: flex; /* Define o layout como flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura da tela inteira */
+    margin: 0; /* Remove margens padrão */
+    background-color: #f0f0f0; /* Cor de fundo */
+}
+
+.game-container {
+    text-align: center; /* Centraliza o texto */
+    background-color: #fff; /* Cor de fundo do container */
+    padding: 20px; /* Adiciona padding interno */
+    border-radius: 10px; /* Define bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do container */
+}
+
+.game-board {
+    display: grid; /* Define o layout do tabuleiro como grid */
+    grid-template-columns: repeat(5, 50px); /* Define 5 colunas de 50px cada */
+    grid-gap: 5px; /* Espaçamento entre as células */
+    margin: 20px auto; /* Margem superior e inferior */
+}
+
+.cell {
+    width: 50px; /* Largura das células */
+    height: 50px; /* Altura das células */
+    background-color: #ddd; /* Cor de fundo das células */
+    border: 1px solid #ccc; /* Borda das células */
+    display: flex; /* Define o layout como flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.cell.clicked {
+    background-color: #bbb; /* Cor de fundo das células clicadas */
+    cursor: default; /* Muda o cursor para o padrão */
+}
+
+#message {
+    font-size: 18px; /* Tamanho da fonte da mensagem */
+    margin-top: 20px; /* Margem superior */
+}
+
+#restartButton {
+    padding: 10px 20px; /* Padding interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 10px; /* Margem superior */
+}
